@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Save Our Wildlife – a conservation awareness page promoting the protection of endangered species and natural habitats."
+    />
+    <title>Save Our Wildlife</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Save Our Wildlife</h1>
+    </header>
+
+    <main id="main-content">
+      <section class="video-section" aria-labelledby="video-heading">
+        <h2 id="video-heading" class="sr-only">Wildlife Conservation Video</h2>
+
+        <div class="video-wrapper" id="videoWrapper">
+          <video
+            id="wildlifeVideo"
+            controls
+            aria-label="Wildlife conservation promotional video"
+          >
+            <source src="wildlife.mp4" type="video/mp4" />
+            <p>
+              Your browser does not support HTML5 video. You can
+              <a href="wildlife.mp4" download>download the video</a> instead.
+            </p>
+          </video>
+        </div>
+
+        <p class="description">
+          Every species plays a vital role in our ecosystem. Habitat destruction,
+          poaching, and climate change push thousands of animals to the edge of
+          extinction every year. Join us in protecting endangered wildlife and
+          preserving natural habitats — because a world rich in biodiversity is
+          a world worth fighting for.
+        </p>
+
+        <button
+          id="toggleBtn"
+          class="toggle-btn"
+          aria-controls="wildlifeVideo"
+          aria-pressed="false"
+        >
+          Hide Video
+        </button>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2026 Save Our Wildlife Conservation Organisation</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
